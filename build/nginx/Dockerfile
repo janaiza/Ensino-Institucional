@@ -11,7 +11,7 @@ RUN ln -s /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
 
 # nginx conf
 COPY build/nginx/nginx.conf /etc/nginx/nginx.conf
-COPY build/nginx/site.conf /etc/nginx/conf.d/site.conf
+COPY build/nginx/default.conf /etc/nginx/conf.d/default.conf
 
 RUN usermod -u 1000 www-data
 
