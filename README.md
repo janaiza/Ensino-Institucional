@@ -1,3 +1,19 @@
+# Instalação:
+Baixe e instale o [Docker](https://www.docker.com/) <br/>
+Acesse o diretório do projeto e execute o comando:
+```sh
+docker-compose up -d
+```
+## Endereço:
+**App:** http://localhost <br/>
+**phpMyAdmin:** http://localhost:81
+
+## Banco:
+**usuario:** root <br/>
+**senha:** root <br/>
+**database:** desafio-zf <br/>
+
+
 # Estórias:
 
 1. [EU001 - Consultar Curso](#eu001)
