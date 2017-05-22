@@ -37,7 +37,8 @@
 5. Ao acionar o ícone "Excluir", o sistema redireciona para a Estória "EU004 - Excluir Curso".
 
 ----
-# EU002 - Cadastrar Curso<a name="eu002"></a>
+<a name="eu002"></a>
+# EU002 - Cadastrar Curso
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos/Botões:
 ----
@@ -56,7 +57,8 @@
 3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória "EU001 - Consultar Curso".
 
 ----
-# EU003 - Alterar Curso<a name="eu003"></a>
+<a name="eu003"></a>
+# EU003 - Alterar Curso
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos (preenchidos)/Botões:
 ```sh
