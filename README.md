@@ -1,4 +1,11 @@
-# EU001 - Consultar Curso
+# Estórias:
+
+1. [EU001 - Consultar Curso](#eu001)
+2. [EU002 - Cadastrar Curso](#eu002)
+3. [EU003 - Alterar Curso](#eu003)
+
+
+# EU001 - Consultar Curso <a name="eu001"></a>
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos e Botões:
 ##### Filtros de Pesquisa:
@@ -22,14 +29,14 @@
 - Caso não, o sistema deverá apresentar a mensagem "Obrigatório informar pelo menos um dos filtros de consulta".
 - Caso sim, o sistema deverá retornar da base de dados os registros de acordo com os filtros informados e atualizar a grid de resultado. Caso não retornar nenhum registro, o sistema deverá apresentar na grid de resultado a mensagem "Nenhum resgistro encontrado.".
 
-3. Ao acionar o botão "Cadastrar Curso", o sistema redireciona para a Estória "EU002 - Cadastrar Curso".
+3. Ao acionar o botão "Cadastrar Curso", o sistema redireciona para a Estória [EU002 - Cadastrar Curso](#eu002).
 
-4. Ao acionar o ícone "Alterar", o sistema redireciona para a Estória "EU003 - Alterar Curso".
+4. Ao acionar o ícone "Alterar", o sistema redireciona para a Estória [EU003 - Alterar Curso](#eu003).
 
 5. Ao acionar o ícone "Excluir", o sistema redireciona para a Estória "EU004 - Excluir Curso".
 
 ----
-# EU002 - Cadastrar Curso
+# EU002 - Cadastrar Curso<a name="eu002"></a>
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos/Botões:
 ----
@@ -48,7 +55,7 @@
 3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória "EU001 - Consultar Curso".
 
 ----
-# EU003 - Alterar Curso
+# EU003 - Alterar Curso<a name="eu003"></a>
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos (preenchidos)/Botões:
 ```sh
