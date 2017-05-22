@@ -1,4 +1,25 @@
-# Instalação:
+# Desafio: Zend Framework 2
+
+Construir as estórias utilizando as tecnologias:
+- PHP
+- Zend 2
+- Doctrine
+- jQuery
+- MySQL
+- Ajax
+
+**Regras:**
+
+_As regras estão descritas nas EU's:_
+1. [EU001 - Consultar Curso](#eu001)
+2. [EU002 - Cadastrar Curso](#eu002)
+3. [EU003 - Alterar Curso](#eu003)
+
+## Prêmio
+  - A definir
+
+
+## Instalação:
 Baixe e instale o [Docker](https://www.docker.com/) <br/>
 Acesse o diretório do projeto e execute o comando:
 ```sh
@@ -14,15 +35,9 @@ docker-compose up -d
 **database:** desafio-zf <br/>
 
 
-# Estórias:
-
-1. [EU001 - Consultar Curso](#eu001)
-2. [EU002 - Cadastrar Curso](#eu002)
-3. [EU003 - Alterar Curso](#eu003)
-
 
 <a name="eu001"></a>
-# EU001 - Consultar Curso 
+## EU001 - Consultar Curso 
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos e Botões:
 ##### Filtros de Pesquisa:
@@ -54,7 +69,7 @@ docker-compose up -d
 
 ----
 <a name="eu002"></a>
-# EU002 - Cadastrar Curso
+## EU002 - Cadastrar Curso
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos/Botões:
 ----
@@ -74,7 +89,7 @@ docker-compose up -d
 
 ----
 <a name="eu003"></a>
-# EU003 - Alterar Curso
+## EU003 - Alterar Curso
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos (preenchidos)/Botões:
 ```sh
