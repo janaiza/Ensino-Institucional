@@ -5,7 +5,8 @@
 3. [EU003 - Alterar Curso](#eu003)
 
 
-# EU001 - Consultar Curso <a name="eu001"></a>
+<a name="eu001"></a>
+# EU001 - Consultar Curso 
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos e Botões:
 ##### Filtros de Pesquisa:
