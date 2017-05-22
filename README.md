@@ -6,8 +6,8 @@
 ```sh
 - Nome (Alfanumérico - 100)
 - Sigla (Alfanumérico - 10)
-- Pesquisar (Botão)
 - Cadastrar Curso (Botão)
+- Pesquisar (Botão)
 ```
 
 ##### Colunas da grid de resultado:
@@ -27,3 +27,21 @@
 4. Ao acinar o ícone "Alterar", o sistema redireciona para a Estória "EU003 - Alterar Curso".
 
 5. Ao acinar o ícone "Excluir", o sistema redireciona para a Estória "EU004 - Excluir Curso".
+
+----
+# EU002 - Cadastrar Curso
+
+1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos/Botões:
+----
+```sh
+- Nome (Alfanumérico - 100)
+- Sigla (Alfanumérico - 10)
+- Cancelar (Botão)
+- Salvar (Botão)
+```
+2. Ao acionar o botão "Salvar":
+- O sistema deverá validar se já existe um curso com o mesmo Nome cadastrado na base de dados (desconsiderando o curso em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe o curso <nome_do_curso> cadastrado.". Onde <nome_do_curso> deverá ser substituído pelo nome do curso.
+- O sistema deverá validar se já existe um curso com a mesma Sigla cadastrada na base de dados (desconsiderando o curso/sigla em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe a sigla <nome_da_sigla> cadastrada para o curso <nome_do_curso>.". Onde <nome_da_sigla> deverá ser substituído pelo nome da sigla.
+- O sistema identifica que todas as validações foram validadas, salva as informações na base de dados, exibe a mensagem "Registro cadastrado com sucesso" e redireciona para a estória "EU001 - Consultar Curso".
+
+3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória "EU001 - Consultar Curso".
