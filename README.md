@@ -14,6 +14,7 @@ _As regras estão descritas nas EU's:_
 1. [EU001 - Consultar Curso](#eu001)
 2. [EU002 - Cadastrar Curso](#eu002)
 3. [EU003 - Alterar Curso](#eu003)
+4. [EU004 - Excluir Curso](#eu004)
 
 ## Prêmio
   - A definir
@@ -65,7 +66,7 @@ docker-compose up -d
 
 4. Ao acionar o ícone "Alterar", o sistema redireciona para a Estória [EU003 - Alterar Curso](#eu003).
 
-5. Ao acionar o ícone "Excluir", o sistema redireciona para a Estória "EU004 - Excluir Curso".
+5. Ao acionar o ícone "Excluir", o sistema redireciona para a Estória [EU004 - Excluir Curso](#eu004).
 
 ----
 <a name="eu002"></a>
@@ -106,3 +107,13 @@ docker-compose up -d
 - O sistema identifica que todas as validações foram validadas, altera as informações na base de dados e exibe a mensagem "Registro alterado com sucesso" e redireciona para a estória "EU001 - Consultar Curso".
 
 3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória "EU001 - Consultar Curso".
+
+----
+<a name="eu004"></a>
+## EU004 - Excluir Curso 
+
+1. Essa funcionalidade se inicia quando o usuário acionar o ícone "Excluir" na grid de resultado. O sistema exibir uma mensagem de confirmação: "Deseja realmente excluir o resgistro?":
+- O usuário não confirma a exlusão do registro, o sistema fecha a mensagem de confirmação e não executa a ação de exclusão.
+- O usuário confirma a exclusão do registro, o sistema verifica na base de dados se o curso em questão possui turma de alunos vinculadas: 
+- - Caso sim, o sistema exibe a mensagem "Não é possível excluir o registro, pois já existem turmas cadastradas.".
+- - Caso não, o sistema exclui o registro da base de dados, atualiza a grid de resultados e exibe a mensagem "Registro excluído com sucesso".
