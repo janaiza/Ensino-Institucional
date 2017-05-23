@@ -11,6 +11,7 @@ Construir as estórias utilizando as tecnologias:
 **Regras:**
 
 _As regras estão descritas nas EU's:_
+<a name="estorias"></a>
 1. [EU001 - Consultar Curso](#eu001)
 2. [EU002 - Cadastrar Curso](#eu002)
 3. [EU003 - Alterar Curso](#eu003)
@@ -60,13 +61,15 @@ docker-compose up -d
 
 2. Ao acionar o botão "Consultar" o sistema deverá validar se pelo menos um dos filtros de registro foi informado:
 - Caso não, o sistema deverá apresentar a mensagem "Obrigatório informar pelo menos um dos filtros de consulta".
-- Caso sim, o sistema deverá retornar da base de dados os registros de acordo com os filtros informados e atualizar a grid de resultado. Caso não retornar nenhum registro, o sistema deverá apresentar na grid de resultado a mensagem "Nenhum resgistro encontrado.".
+- Caso sim, o sistema deverá retornar da base de dados os registros de acordo com os filtros informados e atualizar a grid de resultado. Caso não retornar nenhum registro, o sistema deverá apresentar na grid de resultado a mensagem "Nenhum registro encontrado.".
 
 3. Ao acionar o botão "Cadastrar Curso", o sistema redireciona para a Estória [EU002 - Cadastrar Curso](#eu002).
 
 4. Ao acionar o ícone "Alterar", o sistema redireciona para a Estória [EU003 - Alterar Curso](#eu003).
 
 5. Ao acionar o ícone "Excluir", o sistema redireciona para a Estória [EU004 - Excluir Curso](#eu004).
+
+_[Estórias](#estorias)_
 
 ----
 <a name="eu002"></a>
@@ -82,11 +85,13 @@ docker-compose up -d
 ```
 2. Ao acionar o botão "Salvar":
 - O sistema deverá validar os campos obrigatórios, caso não validado o sistema deverá exibir a mensagem "Campos obrigatórios não informados.".
-- O sistema deverá validar se já existe um curso com o mesmo Nome cadastrado na base de dados (desconsiderando o curso em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe o curso <nome_do_curso> cadastrado.". Onde <nome_do_curso> deverá ser substituído pelo nome do curso.
-- O sistema deverá validar se já existe um curso com a mesma Sigla cadastrada na base de dados (desconsiderando o curso/sigla em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe a sigla <nome_da_sigla> cadastrada para o curso <nome_do_curso>.". Onde <nome_da_sigla> deverá ser substituído pelo nome da sigla e <nome_do_curso> deverá ser substituído pelo nome do curso.
-- O sistema identifica que todas as validações foram validadas, salva as informações na base de dados, exibe a mensagem "Registro cadastrado com sucesso" e redireciona para a estória "EU001 - Consultar Curso".
+- O sistema deverá validar se já existe um curso com o mesmo Nome cadastrado na base de dados (desconsiderando o curso em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe o curso _<nome_do_curso>_ cadastrado.". Onde _<nome_do_curso>_ deverá ser substituído pelo nome do curso.
+- O sistema deverá validar se já existe um curso com a mesma Sigla cadastrada na base de dados (desconsiderando o curso/sigla em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe a sigla _<nome_da_sigla>_ cadastrada para o curso _<nome_do_curso>_.". Onde _<nome_da_sigla>_ deverá ser substituído pelo nome da sigla e _<nome_do_curso>_ deverá ser substituído pelo nome do curso.
+- O sistema identifica que todas as validações foram validadas, salva as informações na base de dados, exibe a mensagem "Registro cadastrado com sucesso" e redireciona para a estória [EU001 - Consultar Curso](#eu001).
 
-3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória "EU001 - Consultar Curso".
+3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória [EU001 - Consultar Curso](#eu001).
+
+_[Estórias](#estorias)_
 
 ----
 <a name="eu003"></a>
@@ -102,11 +107,13 @@ docker-compose up -d
 
 2. Ao acionar o botão "Salvar":
 - O sistema deverá validar os campos obrigatórios, caso não validado o sistema deverá exibir a mensagem "Campos obrigatórios não informados.".
-- O sistema deverá validar se já existe um curso com o mesmo Nome cadastrado na base de dados (desconsiderando o curso em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe o curso <nome_do_curso> cadastrado.". Onde <nome_do_curso> deverá ser substituído pelo nome do curso.
-- O sistema deverá validar se já existe um curso com a mesma Sigla cadastrada na base de dados (desconsiderando o curso/sigla em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe a sigla <nome_da_sigla> cadastrada para o curso <nome_do_curso>.". Onde <nome_da_sigla> deverá ser substituído pelo nome da sigla e <nome_do_curso> deverá ser substituído pelo nome do curso.
-- O sistema identifica que todas as validações foram validadas, altera as informações na base de dados e exibe a mensagem "Registro alterado com sucesso" e redireciona para a estória "EU001 - Consultar Curso".
+- O sistema deverá validar se já existe um curso com o mesmo Nome cadastrado na base de dados (desconsiderando o curso em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe o curso _<nome_do_curso>_ cadastrado.". Onde _<nome_do_curso>_ deverá ser substituído pelo nome do curso.
+- O sistema deverá validar se já existe um curso com a mesma Sigla cadastrada na base de dados (desconsiderando o curso/sigla em questão). Caso exista, o sistema deverá exibir a mensagem "Já existe a sigla _<nome_da_sigla>_ cadastrada para o curso _<nome_do_curso>_.". Onde _<nome_da_sigla>_ deverá ser substituído pelo nome da sigla e _<nome_do_curso>_ deverá ser substituído pelo nome do curso.
+- O sistema identifica que todas as validações foram validadas, altera as informações na base de dados e exibe a mensagem "Registro alterado com sucesso" e redireciona para a estória [EU001 - Consultar Curso](#eu001).
 
-3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória "EU001 - Consultar Curso".
+3. Ao acionar o botão cancelar o sistema deverá redirecionar para a estória [EU001 - Consultar Curso](#eu001).
+
+_[Estórias](#estorias)_
 
 ----
 <a name="eu004"></a>
@@ -117,3 +124,6 @@ docker-compose up -d
 - O usuário confirma a exclusão do registro, o sistema verifica na base de dados se o curso em questão possui turma de alunos vinculadas: 
 - - Caso sim, o sistema exibe a mensagem "Não é possível excluir o registro, pois já existem turmas cadastradas.".
 - - Caso não, o sistema exclui o registro da base de dados, atualiza a grid de resultados e exibe a mensagem "Registro excluído com sucesso".
+
+_[Estórias](#estorias)_
+
