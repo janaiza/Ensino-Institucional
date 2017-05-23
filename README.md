@@ -7,19 +7,20 @@ Construir as estórias utilizando as tecnologias:
 - jQuery
 - MySQL
 - Ajax
+----
 
-**Regras:**
-
-_As regras estão descritas nas EU's:_
 <a name="estorias"></a>
+## Estórias de Usuário:
+
 1. [EU001 - Consultar Curso](#eu001)
 2. [EU002 - Cadastrar Curso](#eu002)
 3. [EU003 - Alterar Curso](#eu003)
 4. [EU004 - Excluir Curso](#eu004)
+----
 
 ## Prêmio
   - A definir
-
+----
 
 ## Instalação:
 Baixe e instale o [Docker](https://www.docker.com/) <br/>
@@ -36,14 +37,14 @@ docker-compose up -d
 **senha:** root <br/>
 **database:** desafio-zf <br/>
 
-
+----
 
 <a name="eu001"></a>
 ## EU001 - Consultar Curso 
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos e Botões:
 ##### Filtros de Pesquisa:
-----
+
 ```sh
 - Nome (Alfanumérico - 100)
 - Sigla (Alfanumérico - 10)
@@ -52,7 +53,7 @@ docker-compose up -d
 ```
 
 ##### Colunas da grid de resultado:
-----
+
 ```sh
 - Nome
 - Sigla
@@ -76,7 +77,7 @@ _[Estórias](#estorias)_
 ## EU002 - Cadastrar Curso
 
 1. Ao acessar a funcionalidade, o sistema deverá exibir a tela com os seguintes campos/Botões:
-----
+
 ```sh
 - Nome (Alfanumérico - 100)
 - Sigla (Alfanumérico - 10)
