@@ -25,9 +25,18 @@ Construir as estórias utilizando as tecnologias:
 ## Instalação:
 Baixe e instale o [Docker](https://www.docker.com/) <br/>
 Acesse o diretório do projeto e execute o comando:
-```sh
+```docker
 docker-compose up -d
 ```
+Depois de baixar as imagens e subir o ambiente acesse:<br/>
+http://localhost <br/>
+Provavelmente vai dar erro, é porque falta instalar as dependencias.<br/>
+Para isso execute o comando:
+```docker
+docker exec -it php composer install
+```
+
+
 ## Endereço:
 **App:** http://localhost <br/>
 **phpMyAdmin:** http://localhost:81
