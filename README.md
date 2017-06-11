@@ -38,8 +38,8 @@ docker exec -it php composer install
 
 
 ## Endereço:
-**App:** http://localhost <br/>
-**phpMyAdmin:** http://localhost:81
+**App:** http://localhost:8080 <br/>
+**phpMyAdmin:** http://localhost:8081
 
 ## Banco:
 **usuario:** root <br/>

@@ -14,8 +14,11 @@ services:
       - ${HTTPS_PORT}:443
 
   db:
-    image: mysql
+    image: andreluizs/mysql
     container_name: mysql
+    build:
+      context: .
+      dockerfile: build/mysql/Dockerfile
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -35,6 +38,8 @@ services:
   
   pma:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: pma
+    depends_on:
+      - db
     ports:
      - ${PHP_MY_ADMIN_PORT}:80
