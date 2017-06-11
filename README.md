@@ -29,7 +29,7 @@ Acesse o diretório do projeto e execute o comando:
 docker-compose up -d
 ```
 Depois de baixar as imagens e subir o ambiente acesse:<br/>
-http://localhost <br/>
+http://localhost:8080 <br/>
 Provavelmente vai dar erro, é porque falta instalar as dependencias.<br/>
 Para isso execute o comando:
 ```docker
