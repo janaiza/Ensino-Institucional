@@ -24,18 +24,19 @@ Construir as estórias utilizando as tecnologias:
 
 ## Instalação:
 Baixe e instale o [Docker for Windows](https://download.docker.com/win/stable/InstallDocker.msi) <br/>
-Acesse o diretório do projeto e execute o comando:
+Acesse o diretório do projeto e execute o comando para subir o ambiente:
 ```docker
 docker-compose up -d
 ```
-Depois de baixar as imagens e subir o ambiente acesse:<br/>
-http://localhost:8080 <br/>
-Provavelmente vai dar erro, é porque falta instalar as dependencias.<br/>
-Para isso execute o comando:
+Após o término do comando, instale as dependências do Zend 2
+Para instalar, execute:
 ```docker
 docker exec -it php composer install
 ```
-
+Para parar o ambiente, execute:
+```docker
+docker-compose down
+```
 
 ## Endereço:
 **App:** http://localhost:8080 <br/>
