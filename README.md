@@ -28,7 +28,7 @@ Acesse o diretório do projeto e execute o comando para subir o ambiente:
 ```docker
 docker-compose up -d
 ```
-Após o término do comando, instale as dependências do Zend 2
+Após o término do comando, instale as dependências do Zend 2<br/>
 Para instalar, execute:
 ```docker
 docker exec -it php composer install
