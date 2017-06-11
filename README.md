@@ -23,7 +23,7 @@ Construir as estórias utilizando as tecnologias:
 ----
 
 ## Instalação:
-Baixe e instale o [Docker](https://www.docker.com/) <br/>
+Baixe e instale o [Docker for Windows](https://download.docker.com/win/stable/InstallDocker.msi) <br/>
 Acesse o diretório do projeto e execute o comando:
 ```docker
 docker-compose up -d
