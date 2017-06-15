@@ -17,7 +17,14 @@ RUN apt-get update && apt-get install -y \
 
 #xdebug
 RUN pecl install xdebug-2.5.4
-RUN docker-php-ext-enable xdebug
+
+RUN echo "zend_extension=$(find /usr/local/lib/php/extensions/ -name xdebug.so)" > /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.remote_enable=1" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.remote_handler=dbgp" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.remote_port=9000" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.remote_autostart=1" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.idekey=docker" >> /usr/local/etc/php/conf.d/xdebug.ini \
+    && echo "xdebug.remote_host=10.0.75.1" >> /usr/local/etc/php/conf.d/xdebug.ini
 
 # composer
 RUN curl -sS https://getcomposer.org/installer | \
@@ -37,8 +44,8 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 # bower
 RUN npm install --global bower
 
-# config xdebug
-COPY build/php/xdebug.ini /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+# config php.ini
+COPY build/php/php.ini /usr/local/etc/php/
 
 EXPOSE 9000
 

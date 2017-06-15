@@ -28,7 +28,7 @@ services:
       - ${MYSQL_PORT}:3306
 
   php:
-    image: andreluizs/php:7-fpm
+    image: andreluizs/php:5.6-fpm
     container_name: php
     build:
         context: .
